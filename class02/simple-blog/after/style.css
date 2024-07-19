@@ -1,0 +1,41 @@
+body {
+    font-family: Arial,sans-serif;
+}
+
+.header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.article h2 {
+    color: rgba(230,12,20,0.5);
+}
+
+.article a {
+    color: rgba(230,12,20,0.5);
+    text-decoration: none;
+}
+
+.date {
+    font-style: italic;
+}
+.author {
+    font-weight: bold;
+}
