@@ -1,0 +1,15 @@
+
+.hello {
+    background-color: gray;
+    color: white;
+}
+div {
+    color: red;
+    border: 1px solid black;
+}
+p {
+    color: yellow;
+}
+#specialP {
+    background-color: blue;
+}
