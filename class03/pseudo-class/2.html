@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span:first-child{ /* if it is first in container */
+            color:red;
+        }
+        span:last-child{
+            color: pink;
+        }
+        span:nth-child(4){
+            color:yellow;
+        }
+        span:first-of-type{ /* first occurence of span in container */
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>Div</div> <!-- 1st child -->
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+    
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+</html>
