@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* ::before, * ::after {
+    box-sizing: border-box;
+}
+:root {
+    --primary : hsl(257, 48%, 62%);
+    --primary-dark: hsl(257,80%,42%);
+    --light: hsl(278, 100%, 98%);
+    --dark: hsl(270, 9%, 22%);
+}
+

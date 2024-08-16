@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* ::before, * ::after {
+    box-sizing: border-box;
+}
+:root {
+    --primary : hsl(257, 48%, 62%);
+    --primary-dark: hsl(257,80%,42%);
+    --light: hsl(278, 100%, 97%);
+    --lighter: hsl(278,100%,100%);
+    --dark: hsl(270, 9%, 22%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.navbar-menu-item {
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.navbar-menu-item a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navbar-menu-item a:hover {
+    color: var(--lighter);
+}
