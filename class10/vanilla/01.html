@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data Display</title>
+	<style>
+		/* Basic styling */
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.output {
+			font-weight: bold;
+			color: #00698f;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Container for input and button -->
+<div class="container">
+	<input type="text" id="input-data" placeholder="Enter some text">
+	<button onclick="displayData()">Click Me</button>
+	<p class="output" id="output"></p>
+</div>
+
+<script>
+	// Function to display input data
+	function displayData() {
+		// Get the input element
+		const inputData = document.getElementById('input-data');
+		
+		// Get the output element
+		const output = document.getElementById('output');
+		
+		// Display the input data
+		output.innerText = inputData.value;
+	}
+</script>
+
+</body>
+</html>

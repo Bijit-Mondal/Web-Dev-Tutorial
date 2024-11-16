@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Form</title>
+	<style>
+		/* Add some basic styling */
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		/* Style the form container */
+		.form-container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		/* Style the output container */
+		.output-container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+
+<!-- Form container -->
+<div class="form-container">
+	<h2>Sample Form</h2>
+	<form id="sample-form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+		
+    <label for="email">Email:</label>
+		<input type="text" id="email" name="email" required><br><br>
+		
+    <label for="age">Age:</label>
+		<select id="age" name="age" required>
+			<option value="">Select Age</option>
+			<option value="18-24">18-24</option>
+			<option value="25-34">25-34</option>
+			<option value="35-44">35-44</option>
+			<option value="45+">45+</option>
+		</select><br><br>
+		
+		<label for="subscribe">Subscribe to Newsletter:</label>
+		<input type="checkbox" id="subscribe" name="subscribe"><br><br>
+		
+		<button type="submit">Submit</button>
+	</form>
+</div>
+
+<!-- Output container -->
+<div class="output-container" id="output-container">
+	<h2>Form Output</h2>
+	<p id="output"></p>
+</div>
+
+<script>
+	// Get the form element
+	const form = document.getElementById('sample-form');
+	
+	// Get the output element
+	const output = document.getElementById('output');
+	
+	// Add event listener to the form
+	form.addEventListener('submit', (e) => {
+		// Prevent default form submission
+		e.preventDefault();
+		
+		// Get the form data
+		const formData = new FormData(form);
+		
+		// Create an object to store the form data
+		const data = {};
+		
+		// Iterate over the form data
+		for (const [key, value] of formData) {
+			data[key] = value;
+		}
+		
+		// Display the form data
+		output.innerText = JSON.stringify(data, null, 2);
+	});
+</script>
+
+</body>
+</html>
